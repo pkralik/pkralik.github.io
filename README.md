@@ -13,3 +13,14 @@ The aim of the project is to read tickers and display them.
 ### Run tests
 
     groovy watchlist.groovy
+
+### Run the app
+
+    ./gradlew build
+    ./gradlew run
+
+### Run the Python app
+    conda create --name watchlist python=3.7
+    conda activate watchlist
+    pip install -r requirements.txt
+    python watchlist.py
