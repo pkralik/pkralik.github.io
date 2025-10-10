@@ -1,0 +1,15 @@
+*/15 13-23 * * 1-5 (cd /var/www/html/watchlist;bash run.sh &> run.log)
+
+*/5 13-23 * * 1-5 (cd /var/www/html/watchlist;python3 watchlist.py finviz &> finviz.log)
+*/6 13-23 * * 1-5 (cd /var/www/html/watchlist;python3 watchlist.py yahoo &> yahoo.log)
+*/7 13-23 * * 1-5 (cd /var/www/html/watchlist;python3 watchlist.py tickers &> tickers.log)
+*/8 13-23 * * 1-5 (cd /var/www/html/watchlist;python3 watchlist.py timalerts &> timalerts.log)
+*/15 13-23 * * 1-5 (cd /var/www/html/watchlist;python3 watchlist.py watchlist &> watchlist.log)
+
+*/5 13-23 * * 1-5 (cd /var/www/html/watchlist;bash bin/watchlist watchlist &> watchlist.log)
+*/6 13-23 * * 1-5 (cd /var/www/html/watchlist;bash bin/watchlist tickers &> tickers.log)
+*/7 13-23 * * 1-5 (cd /var/www/html/watchlist;bash bin/watchlist timalerts &> timalerts.log)
+
+*/5 14-23 * * 1-5 (cd /var/www/html/watchlist/groovy;groovy run.groovy watchlist &> watchlist.log)
+*/6 14-23 * * 1-5 (cd /var/www/html/watchlist/groovy;groovy run.groovy tickers &> tickers.log)
+

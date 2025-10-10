@@ -1,0 +1,5 @@
+*/5 13-23 * * 1-5 (cd /var/www/html/watchlist;source venv/bin/activate;python3 watchlist.py finviz &> finviz.log)
+*/6 13-23 * * 1-5 (cd /var/www/html/watchlist;source venv/bin/activate;python3 watchlist.py yahoo &> yahoo.log)
+*/7 13-23 * * 1-5 (cd /var/www/html/watchlist;source venv/bin/activate;python3 watchlist.py tickers &> tickers.log)
+*/8 13-23 * * 1-5 (cd /var/www/html/watchlist;source venv/bin/activate;python3 watchlist.py timalerts &> timalerts.log)
+*/15 13-23 * * 1-5 (cd /var/www/html/watchlist;source venv/bin/activate;python3 watchlist.py watchlist &> watchlist.log)
